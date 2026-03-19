@@ -107,7 +107,3 @@ Configure via `.env` or API:
 - **Reproducible runs**: Seed-based determinism
 - **Scenario injection**: Runtime crisis events
 - **Export**: Full state snapshots to JSON/CSV
-
-## License
-
-MIT
