@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    background-color: #0a0e1a;
+    color: #e5e7eb;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #111827;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-nce-panel border border-nce-border rounded-lg p-4;
+  }
+  .panel-title {
+    @apply text-nce-accent font-semibold text-sm uppercase tracking-wider mb-3;
+  }
+  .stat-value {
+    @apply text-2xl font-bold text-white;
+  }
+  .stat-label {
+    @apply text-xs text-gray-500 mt-1;
+  }
+  .badge {
+    @apply text-xs px-2 py-0.5 rounded font-semibold;
+  }
+  .badge-green {
+    @apply badge bg-nce-green/20 text-nce-green;
+  }
+  .badge-red {
+    @apply badge bg-nce-red/20 text-nce-red;
+  }
+  .badge-yellow {
+    @apply badge bg-nce-yellow/20 text-nce-yellow;
+  }
+  .badge-blue {
+    @apply badge bg-nce-accent/20 text-nce-accent;
+  }
+  .badge-purple {
+    @apply badge bg-nce-purple/20 text-nce-purple;
+  }
+  .btn {
+    @apply px-3 py-1.5 rounded text-sm font-semibold transition-colors cursor-pointer;
+  }
+  .btn-primary {
+    @apply btn bg-nce-accent text-white hover:bg-blue-600;
+  }
+  .btn-danger {
+    @apply btn bg-nce-red text-white hover:bg-red-600;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent border border-nce-border text-gray-300 hover:bg-nce-border;
+  }
+}
